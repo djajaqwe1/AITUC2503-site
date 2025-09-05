@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Schedule</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schedule.html" class="active">Schedule</a></li>
+      <li><a href="students.html">Students</a></li>
+      <li><a href="teachers.html">Teachers</a></li>
+      <li><a href="subjects.html">Subjects</a></li>
+      <li><a href="materials.html">Materials</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Weekly Schedule</h1>
+
+    <p style="text-align:center; margin-bottom:25px;">
+      Здесь можно посмотреть или скачать актуальное расписание занятий.
+    </p>
+
+    <!-- Кнопка для скачивания -->
+    <div style="text-align:center; margin-bottom:40px;">
+      <a href="files/schedule.xlsx" download 
+         style="display:inline-block; padding:14px 28px; background:#4f46e5; 
+                color:white; border-radius:10px; text-decoration:none; 
+                font-weight:600; box-shadow:0 6px 14px rgba(79,70,229,0.3);">
+        📥 Скачать расписание (Excel)
+      </a>
+    </div>
+
+    <!-- Превью PDF -->
+    <h2 style="margin-bottom:20px;">Просмотр онлайн:</h2>
+    <embed src="files/schedule.pdf" type="application/pdf" width="100%" height="600px" 
+           style="border-radius:12px; box-shadow:0 6px 16px rgba(0,0,0,0.08);">
+  </main>
+</body>
+</html>

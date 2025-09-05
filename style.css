@@ -1,0 +1,133 @@
+/* === Общие стили === */
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9fafc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  /* === Навигация (как лендинг) === */
+  nav {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 12px 18px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: #4f46e5; /* акцентный фиолетовый */
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(79,70,229,0.3);
+  }
+  
+  /* === Таблицы (стиль карточек) === */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  table th {
+    background: #4f46e5;
+    color: white;
+    padding: 14px;
+    text-align: center;
+  }
+  
+  table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* === Списки (карточки студентов/учителей) === */
+  ul {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 12px;
+  }
+  
+  ul li {
+    background: white;
+    padding: 14px 18px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  }
+  
+  /* === Кнопки (например, для материалов) === */
+  a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* === Адаптивность === */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    main {
+      margin: 20px auto;
+    }
+  }
+  
